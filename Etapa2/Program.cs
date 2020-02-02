@@ -12,27 +12,39 @@ namespace Etapa1
             ); /*los objetos opcionales son presindibles, 
             no importa si no son llamados, o, otro puesto en su posicion, no son afectados*/
 
-            var curso1 = new Curso()
-            {
-                Nombre="101"
-            };
+            var arregloCurso = new Curso[3];   
+            
+            arregloCurso[0] = new Curso()
+                                {
+                                    Nombre="101"
+                                };
+
             var curso2 = new Curso()
             {
                 Nombre="201"
             };
+            arregloCurso[1] = curso2;
 
-            var curso3 = new Curso()
-            {
-                Nombre="301"
-            };
+            arregloCurso[2] = new Curso()
+                                {
+                                    Nombre="301"
+                                };
 
            
             Console.WriteLine(escuela);
             System.Console.WriteLine("======================================");
-            System.Console.WriteLine(curso1.Nombre + " ," + curso1.UniqueId);
-            System.Console.WriteLine($"{curso2.Nombre} , {curso2.UniqueId}");
-            System.Console.WriteLine($"{curso3.Nombre} , {curso3.UniqueId}");
+            ImprimirCursos(arregloCurso);
 
+        }
+
+        private static void ImprimirCursos(Curso[] arregloCurso)
+        {
+            int cont = 0;
+            while (cont < arregloCurso.Length)
+            {
+                Console.WriteLine($"Nombre {arregloCurso[cont].Nombre}, ID {arregloCurso[cont].UniqueId}");
+                cont++;
+            }
         }
     }
 }
