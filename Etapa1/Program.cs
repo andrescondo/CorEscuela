@@ -8,7 +8,10 @@ namespace Etapa1
         static void Main(string[] args)
         {
             var escuela = new Escuela("El Universitaro", 2020);
-            Console.WriteLine(escuela.Nombre);
+            escuela.país = "Ecuador";
+            escuela.ciudad = "Guayaquil";
+            escuela.TiposEscuelas = TiposEscuelas.Primaria;
+            Console.WriteLine(escuela);
         }
     }
 }

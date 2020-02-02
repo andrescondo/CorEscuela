@@ -5,7 +5,7 @@ namespace CorEscuela.Entidades
         string nombre;
         public string Nombre
         {
-            get{ return "Nombre: " + nombre;}
+            get{ return nombre;}
             set{nombre =value.ToUpper();}
         }
 
@@ -15,13 +15,14 @@ namespace CorEscuela.Entidades
 
         public string ciudad { get; set; }
 
-        /*public Escuela(string nombre, int año) => ()
-        {
-            this.nombre = nombre;
-            añoDeCreación = año;
-        }*/
+        public TiposEscuelas TiposEscuelas {get; set;}
 
         public Escuela(string nombre, int año) => (Nombre, añoDeCreación) = (nombre, año);
+
+        public override string ToString()
+        {
+            return $"Nombre: {Nombre}, Tipo: {TiposEscuelas}\n País: {país}, Ciudad: {ciudad}";
+        }
 
     }
 
