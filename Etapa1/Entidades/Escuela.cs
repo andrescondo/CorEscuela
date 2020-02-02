@@ -17,12 +17,21 @@ namespace CorEscuela.Entidades
 
         public TiposEscuelas TiposEscuelas {get; set;}
 
-        public Escuela(string nombre, int año) => (Nombre, añoDeCreación) = (nombre, año);
+        public Escuela(string nombre, int año,
+                        TiposEscuelas tipos,
+                        string país="", //con el ="" le digo al sistema que el caracter aun no ha sido declarado
+                        string ciudad=""
+        )
+        {
+            (Nombre, añoDeCreación)= (nombre, año);
+            this.país = país;
+            this.ciudad = ciudad;
+        }
 
         public override string ToString()
         {
-            return $"Nombre: {Nombre}, Tipo: {TiposEscuelas}\n País: {país}, Ciudad: {ciudad}";
-        }
+            return $"Nombre: \"{Nombre}\", Tipo: {TiposEscuelas} {System.Environment.NewLine} País: {país}, Ciudad: {ciudad}";
+        } //{System.Environment.NewLine} es equivalente al \n, pero el primero sirve para cualquier sistemas
 
     }
 
