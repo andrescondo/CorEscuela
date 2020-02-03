@@ -17,6 +17,8 @@ namespace CorEscuela.Entidades
 
         public TiposEscuelas TiposEscuelas {get; set;}
 
+        public Curso[] Cursos { get; set; }
+
         public Escuela(string nombre, int año,
                         TiposEscuelas tipos,
                         string país="", //con el ="" le digo al sistema que el caracter aun no ha sido declarado

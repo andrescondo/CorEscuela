@@ -10,26 +10,14 @@ namespace Etapa1
             var escuela = new Escuela("El nuevo milenio", 2020, TiposEscuelas.Primaria, 
                                      ciudad:"Guayaquil", país:"Ecuador"
             ); /*los objetos opcionales son presindibles, 
-            no importa si no son llamados, o, otro puesto en su posicion, no son afectados*/
+            no importa si no son llamados, o, otro puesto en su posicion, no son afectados*/ 
 
-            var arregloCurso = new Curso[3];   
-            
-            arregloCurso[0] = new Curso()
-                                {
-                                    Nombre="101"
-                                };
-
-            var curso2 = new Curso()
+            Curso[] arregloCurso = 
             {
-                Nombre="201"
-            };
-            arregloCurso[1] = curso2;
-
-            arregloCurso[2] = new Curso()
-                                {
-                                    Nombre="301"
-                                };
-
+                Curso(){Nombre="101"},
+                Curso(){Nombre="201"},
+                Curso(){Nombre="301"}
+            } 
            
             Console.WriteLine(escuela);
             System.Console.WriteLine("======================================");
