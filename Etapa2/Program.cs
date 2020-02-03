@@ -33,18 +33,17 @@ namespace Etapa1
            
             Console.WriteLine(escuela);
             System.Console.WriteLine("======================================");
-            ImprimirCursos(arregloCurso);
+            ImprimirCursosforEach(arregloCurso);
 
         }
 
-        private static void ImprimirCursos(Curso[] arregloCurso)
+        private static void ImprimirCursosforEach(Curso[] arregloCurso)
         {
-            int cont = 0;
-            while (cont < arregloCurso.Length)
+            foreach (var curso in arregloCurso)
             {
-                Console.WriteLine($"Nombre {arregloCurso[cont].Nombre}, ID {arregloCurso[cont].UniqueId}");
-                cont++;
+                Console.WriteLine($"Nombre {curso.Nombre}, ID {curso.UniqueId}");
             }
+            
         }
     }
 }
