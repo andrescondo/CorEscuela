@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ari\\documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\etapa2\\Etapa1.csproj": {}
+    "C:\\Users\\ari\\Documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\Etapa2\\Etapa1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ari\\documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\etapa2\\Etapa1.csproj": {
+    "C:\\Users\\ari\\Documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\Etapa2\\Etapa1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ari\\documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\etapa2\\Etapa1.csproj",
+        "projectUniqueName": "C:\\Users\\ari\\Documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\Etapa2\\Etapa1.csproj",
         "projectName": "Etapa1",
-        "projectPath": "C:\\Users\\ari\\documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\etapa2\\Etapa1.csproj",
+        "projectPath": "C:\\Users\\ari\\Documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\Etapa2\\Etapa1.csproj",
         "packagesPath": "C:\\Users\\ari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ari\\documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\etapa2\\obj\\",
+        "outputPath": "C:\\Users\\ari\\Documents\\cursos\\curso-fundamentos-de-cs-con-net-core\\CorEscuela\\Etapa2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
