@@ -19,9 +19,13 @@ namespace Etapa1
                 new Curso(){Nombre="101", jornada = Jornadas.mañana},//jornada = nombre de la clase
                 new Curso(){Nombre="201", jornada = Jornadas.mañana},//Jornadas = nombre del archivo
                 new Curso(){Nombre="301", jornada = Jornadas.mañana},
+<<<<<<< HEAD
                 new Curso(){Nombre="401", jornada = Jornadas.mañana},
                 new Curso(){Nombre="501", jornada = Jornadas.mañana},
                 new Curso(){Nombre="501", jornada = Jornadas.tarde}
+=======
+                new Curso(){Nombre="401", jornada = Jornadas.mañana}
+>>>>>>> 545c7b5aee9510ba3c311061402ce0e52e59928b
             };
 
             escuela.Cursos.Add(new Curso {Nombre = "102", jornada = Jornadas.tarde} );
@@ -39,20 +43,31 @@ namespace Etapa1
             //escuela.Cursos.AddRange(otraColeccion); -- Agrega un objeto con todas los atributos
 
             //escuela.Cursos.RemoveAll(Predicado); -- Borra un dato en especifico de un objeto
+<<<<<<< HEAD
             escuela.Cursos.RemoveAll(delegate (Curso cur)
             { 
                 return cur.Nombre == "301"; 
             } ); //-- Forma delegate
 
             escuela.Cursos.RemoveAll( (cur) => cur.Nombre == "501" && cur.jornada == Jornadas.mañana );
+=======
+
+>>>>>>> 545c7b5aee9510ba3c311061402ce0e52e59928b
 
             imprimirCursosEscuela(escuela);
         }
 
+<<<<<<< HEAD
         /*private static bool Predicado (Curso curobj)
         {
             return curobj.Nombre == "301";
         }*/
+=======
+        private static bool Predicado (Curso curobj)
+        {
+            return curobj.Nombre == "301";
+         }
+>>>>>>> 545c7b5aee9510ba3c311061402ce0e52e59928b
 
         private static void imprimirCursosEscuela(Escuela escuela)
         {
