@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace CorEscuela.Entidades 
 {
-    class Escuela
+    public class Escuela
     {
         string nombre;
         public string Nombre
