@@ -25,10 +25,41 @@ namespace CorEscuela
                                      );
             
             cargarCurso();
-
-            cargarAlumno();
             cargarAsignaturas();
+            cargarAlumnos();
+            
             cargarEvaluaciones();
+        }
+
+        private void cargarAlumnos()
+        {
+            string[] name1 = {"Alba", "Felipa", "Eunesio", "Farid", "Donald", "Alvaro", "Nicolas"};
+            string[] name2 = { "freddy", "Anabel", "Luis", "Rick", "Morti", "Silvana", "Diomedes", "Teseo" };
+            string[] lastname = { "Riuz", "Sarmiento", "Uribe", "Maduro", "Trump", "Toledo", "Herrera"}
+        }
+
+        
+        private void cargarAsignaturas()
+        {
+            foreach (var curso in Escuela.Cursos)
+            {
+                var listaAsignatura = new List<Asignatura>()
+                {
+                    new Asignatura{Nombre = "Matemáticas"},
+                    new Asignatura{Nombre = "Educación Física"},
+                    new Asignatura{Nombre = "Castellano"},
+                    new Asignatura{Nombre = "Ciencias Naturales"},
+                    new Asignatura{Nombre = "Informática"}
+                }
+
+                curso.Asignatura.AddRange(listaAsignatura);
+            }
+        }
+
+        
+        private void cargarEvaluaciones()
+        {
+
         }
 
         private void cargarCurso()
