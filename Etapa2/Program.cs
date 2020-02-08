@@ -26,7 +26,7 @@ namespace Etapa1
         private static void imprimirCursosEscuela(Escuela escuela)
         {
             Printer.DibujarTitle("Curso Escuela");
-            Printer.Beep();
+            //Printer.Beep();
 
             if(escuela?.Cursos != null)
             {
